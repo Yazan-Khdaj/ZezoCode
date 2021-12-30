@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: rgba(57,22,124,0.875);
+  background-color: #1e3339;
 }
 
 header{
@@ -15,27 +15,31 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ed23d1;
+  background-color: rgb(9,9,70);
 }
 
 header h1{
-  color: #233c9c;
+  color: lightblue;
   font-weight: 900;
-  font-size: 3em;
+  font-size: 6em;
+  margin-left: 10px;
 }
 
 .links li{
   list-style: none;
+  display: inline;
+  padding: 10px;
 }
 
 .links a{
   color: black;
   text-decoration: none;
+  color: lightblue;
+  font-size: 1.6em;
 }
 
 .section1{
-  margin-top: 0;
-  width: 100%;
+  width:100%;
   min-height: 60vh;
   display: flex;
   align-items: center;
@@ -44,12 +48,12 @@ header h1{
 }
 
 .profile{
-  padding: 20px;
+  padding-left: 20px;
 }
 
 .profile h2{
   margin-top: 30px;
-  font-size: 1.1em;
+  font-size: 3em;
   color: #dab4eb;
 }
 
@@ -60,7 +64,8 @@ header h1{
 }
 
 .profile h3{
-  font-size: 1.1em;
+  font-size: 1.9em;
+  padding-top: 10px;
   color: #dab4eb;
 }
 
@@ -71,6 +76,7 @@ header h1{
 
 .profile ul li{
   padding: 10px;
+  font-size: 3em;
 }
 
 .github a{
@@ -85,29 +91,134 @@ header h1{
   color: red;
 }
 
-/* .btn_courss{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.btn_courss a{
-  text-decoration: none;
-  background-color: #0045ff;
-  padding: 3px 10px;
-  margin-right: 20px;
-  border: 2px solid #20444d;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0 3px 0 4px #23385e;
-  outline: 5px solid white;
-}
-
-.btn_courss a:hover{
-  background-color: #a400ff;
-}
-
-
-section h2{
+.section2 h2{
+  padding:20px ;
   color: #00afff;
-} */
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: 200px;
+}
+
+.group-card{
+  overflow-x: auto;
+  display: flex;
+}
+
+.group-card img{
+  width: 500px;
+  height: 700px;
+  background-color: black;
+}
+
+.card{
+  display: inline-block;
+  padding: 6px;
+  margin: 20px;
+  color: #007dff;
+  font-size: 3em;
+  font-weight: bolder;
+  border-radius: 20px;
+  text-align: center;
+  background: #eee;
+  box-shadow: 3px 3px 3px 2px grey;
+}
+
+.section3 h2{
+  padding:20px ;
+  color: #00afff;
+  font-size: 4em;
+  font-weight: bolder;
+  margin-top: 200px;
+}
+
+footer{
+  background-color: #162326;
+  color: #a5e9fa;
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  font-size: 1.9em;
+  padding: 20px;
+}
+
+footer img{
+  width: 100%;
+  height: 700px;
+  margin: 20px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px #23385e;
+  -moz-box-shadow: 0 0 0 2px #23385e;
+  -o-box-shadow: 0 0 0 2px #23385e;
+  -ms-box-shadow: 0 0 0 2px #23385e;
+  box-shadow: 0 0 0 2px #23385e;
+}
+
+footer p{
+  padding: 10px 10px 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+footer div{
+  width: 100%;
+  text-align: center;
+  line-height: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+footer address{
+  color: #043be7;
+  padding: 40px;
+}
+
+footer address::after{
+  content: '#';
+  margin-left: 5px;
+  color: yellow;
+}
+
+footer address::before{
+  content: '#';
+  margin-right: 5px;
+  color: yellow;
+}
+
+footer .ar-copy::after{
+  content: ' 2021';
+}
+
+footer .ar-copy sup{
+  position: absolute;
+  left: 23%;
+  top: 17%;
+}
+
+footer div{
+  padding: 10px;
+}
+
+footer div a{
+  padding: 40px;
+  font-weight: 800;
+  font-size: 1.9em;
+}
+
+footer div .facebook{
+    color: blue;
+}
+
+footer div .youtube{
+    color: red;
+}
+
+footer div .github{
+    color: #87989c;
+}
